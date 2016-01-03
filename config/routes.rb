@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  root'home#index'
-  
-  get '/about' => 'home#about'
+  resources :entry
 
+  root      'home#index'
+ #root 'entry#index'
+
+  get 'about' => 'home#about'
+  get 'contact' => 'home#contact'
+  get 'new' => 'entry#new'
 
   #get 'home/index'
 
