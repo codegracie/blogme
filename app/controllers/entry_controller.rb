@@ -1,12 +1,18 @@
 class EntryController < ApplicationController
 
-def index
+	def index
 
-end
+  	end
+  
+  
 
-def new
-	
-end
+  	def new
 
+  	end
+
+  	def create
+
+
+  	end
 
 end
