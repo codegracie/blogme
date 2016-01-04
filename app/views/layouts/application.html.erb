@@ -19,31 +19,50 @@
 		<% end %>
 
 		<ul>
-		<li class ="category"> Project Desc </li>
+		<li class ="category"> Project Description </li>
 		<li><%= link_to "About", about_path %></li>
 		</ul>
 
 		<ul>
-		<li class ="category"> About the Blog </li>
+		<li class ="category"> About the Writer </li>
 		<li><%= link_to "Contact", contact_path %></li>
+		<li class ="sign_in"> Admin Login </li>
 		</ul>
 
 
-<div id="main_content">
 
 
-<div class = "container">
-<%= yield %>
-<%= render 'layouts/footer' %>
+<!---sign in nav 
+<div style="padding-bottom: 55px;" id="main-nav">
+
+<ul id="navigation" class=""><li base-menu="1" id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-428"><a href="#"><i class="fa-home fa"></i><span class="fontawesome-text"> Admin Login</span></a></li>
+
+<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="#/contact/"><i class="fa-user fa"></i><span class="fontawesome-text"> Contact</span></a></li>
+</ul>          </div>
+
+-->
+
 </div>
 
+<div id="main_content">
+<div id="header">
 
+	<p>All Post Entries</p>
+	<div class="buttons">
+		<!--
+		<li><!- %= link_to "New Post", new_entry_path, class: "btn btn-default" %></li>
+ 		<li><!-%= link_to "Log Out", "#", class: "btn btn-default" %></li>
+		-->
 
 	</div>
+
+</div>
+
+<%= yield %>
+
 </div>
 
 
-</div>
 
 
 

@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
   
-  resources :entry
+  resources :posts
 
- # root      'home#index'
- root 'entry#index'
- #get 'entry/new'
-
+  #root      'home#index'
+   root      'posts#index'
 
   get 'about' => 'home#about'
   get 'contact' => 'home#contact'
-  get 'new' => 'entry#new'
+  #get 'newentry' => 'entry#new'
+
+
 
   #get 'home/index'
 

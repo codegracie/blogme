@@ -10,9 +10,5 @@ class EntryController < ApplicationController
 
   	end
 
-  	def create
-
-
-  	end
 
 end

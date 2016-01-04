@@ -1,4 +1,26 @@
+
+<div id="page_wrapper">
 <h1>New Post</h1>
-<p>write new post here</p>
+<p>Ready for your next blog entry? Take it away. </p><br>
+
+<%= form_for :Post, url: newentry_path do |f| %>
+<p>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+</p>
+<p>
+<br>
+
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+</p>
+
+<p>
+	<%= f.submit %>
+
+</p>
 
 
+<% end %>
+
+</div>
